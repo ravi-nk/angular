@@ -5,188 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
 </head>
-<style>
-
-
-
-
-.topnav {
-  overflow: hidden;
-  background-color: white;
-  color: black;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width:600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-  float:right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-  float:none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/* @media screen and (max-width:1060px) {
-  .topnav a:not(:nth-child(-n+6)){display: none;}
-  .topnav a.icon {
-  float:right;
-    display: block;
-  }
-  
-  .topnav.responsive a:not(:nth-child(-n+5)) {
-  float:none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
-@media screen and (max-width:838px) {
-  .topnav a:not(:nth-child(-n+8)){display: none;}
-  .topnav a.icon {
-  float:right;
-    display: block;
-  }
-  .topnav.responsive a:not(:nth-child(-n+7)) {
-  float:none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
-@media screen and (max-width:800px) {
-  .topnav a:not(:nth-child(-n+7)){display: none;}
-  .topnav a.icon {
-  float:right;
-    display: block;
-  }
-  .topnav.responsive a:not(:nth-child(-n+6)) {
-  float:none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
-
-@media screen and (max-width:1220px) {
-  .topnav a:not(:nth-child(-n+7)){display: none;}
-  .topnav a.icon {
-  float:right;
-    display: block;
-  }
-  .topnav.responsive a:not(:nth-child(-n+6)) {
-  float:none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
-@media screen and (max-width:1340px) {
-  .topnav a:not(:nth-child(-n+8)){display: none;}
-  .topnav a.icon {
-  float:right;
-    display: block;
-  }
-  .topnav.responsive a:not(:nth-child(-n+7)) {
-  float:none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
-@media screen and (max-width:440px) {
-  .topnav a:not(:nth-child(-n+3)){display: none;}
-  .topnav a.icon {
-  float:right;
-    display: block;
-  }
-  .topnav.responsive a:not(:nth-child(-n+7)) {
-  float:none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-} */
-
-
-
-</style>
-
-
 <body>
-    
-<div class="topnav" id="myTopnav">
-     <a href="" data-toggle="pill"><img src="https://www.bankofengland.co.uk/-/media/boe/images/logo/logo-boe.svg?h=48&la=en&mh=61&w=215&hash=AC948B7462B3B0F4C12592CE7C11D3ABD746AB6D"></a>
+  <header >
+<div class="topnav" id="myTopnav" style="background:#f6f6f6;">   
+     <a href="" data-toggle="pill"><img src="https://www.bankofengland.co.uk/-/media/boe/images/logo/logo-boe.svg?h=48&la=en&mh=61&w=215&hash=AC948B7462B3B0F4C12592CE7C11D3ABD746AB6D" style="width:215px;height: 48px;"></a>
      <span style="float: right;">
     <a data-toggle="pill" href="#home">Browse</a>
     <a data-toggle="pill" href="#menu1">About</a>
@@ -245,7 +67,7 @@
      </span>
  
 </div>
-
+</header>
 <section style="background:url(https://www.bankofengland.co.uk/-/media/boe/images/banners/bank-frontage.jpg);">
     <div class="container">
         
@@ -324,7 +146,297 @@
         </div>
 </div>
 </div>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <h4 ><a href="" style="text-decoration: none;color: #aa0b3c;"> Banknotes</a></h4>
+      <p style="font-size:16.9px;"><a href="" style="color: black;">Current banknotes</a>,
+        <a href="" style="color: black;">upcoming banknotes</a>,
+        <a href="" style="color: black;">withdrawn banknotes</a>,
+        <a href="" style="color: black;">Counterfeit banknotes</a>,
+        <a href="" style="color: black;">dameged banknotes</a> and
+        <a href="" style="color: black;">how to exchange and old banknote</a>
+        
+      </p>
+    </div>
+    <div class="col-md-3">
+      <h4 ><a href="" style="text-decoration: none;color: #aa0b3c;"> Financial stability</a></h4>
+      <p style="font-size:16.9px;"><a href="" style="color: black;">Stress testing</a>,
+        <a href="" style="color: black;">resolution</a>,
+        <a href="" style="color: black;"> the Financial Policy Committee (FPC) </a>,
+        <a href="" style="color: black;">financial market infrastructure supervision</a>,
+        <a href="" style="color: black;">financial sector continuity</a> and
+        <a href="" style="color: black;"> EU withdrawal</a>
+        
+      </p>
+    </div>
+    <div class="col-md-3">
+      <h4 ><a href="" style="text-decoration: none;color: #aa0b3c;"> Gold</a></h4>
+      <p style="font-size:16.9px;" style="color: black;">Find out about gold at the Bank of England
+         and
+        <a href="" style="color: black;"> see our current gold holdings.</a>
+        
+      </p>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+    <div class="row mt-5">
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <h4 ><a href="" style="text-decoration: none;color: #aa0b3c;"> Markets</a></h4>
+        <p style="font-size:16.9px;">The<a href="" style="color: black;">Sterling Monetary Framework</a>,the
+          <a href="" style="color: black;">Asset Purchase Facility</a> and
+          <a href="" style="color: black;">other market operations</a>,
+          <a href="" style="color: black;"> foreign currency reserves</a> and
+          <a href="" style="color: black;">markets committees.</a> 
+          
+        </p>
+      </div>
+      <div class="col-md-3">
+        <h4 ><a href="" style="text-decoration: none;color: #aa0b3c;"> Monetary policy</a></h4>
+        <p style="font-size:16.9px;"><a href="" style="color: black;">Quantitative easing</a>,
+          <a href="" style="color: black;">inflation</a>,
+          <a href="" style="color: black;">  the Monetary Policy Committee (MPC) </a> ,and
+          <a href="" style="color: black;"> interest rates.</a>
+          
+        </p>
+      </div>
+      <div class="col-md-3">
+        <h4 ><a href="" style="text-decoration: none;color: #aa0b3c;">Payment and settlement</a></h4>
+        <p style="font-size:16.9px;" style="color: black;">RTGS Renewal Programme,
+          <a href="" style="color: black;"> CHAPS</a>
+           and
+          <a href="" style="color: black;"> banking services.</a>
+          
+        </p>
+      </div>
+      <div class="col-md-2"></div>
+      
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <h4 ><a href="" style="text-decoration: none;color: #aa0b3c;"> Prudential regulation</a></h4>
+      <p style="font-size:16.9px;"><a href="" style="color: black;">What does the PRA do?</a>,
+        <a href="" style="color: black;">policy</a>,
+        <a href="" style="color: black;">authorisations</a>,
+        <a href="" style="color: black;">supervision</a>,
+        <a href="" style="color: black;"> regulatory reporting</a>,
+        <a href="" style="color: black;"> regulatory action</a>,
+        <a href="" style="color: black;">New Bank Start-up Unit</a>,
+        <a href="" style="color: black;">New Insurer Start-up Unit</a>and
+        <a href="" style="color: black;">how to exchange and old banknote</a>
+        
+      </p>
+    </div>
+    <div class="col-md-3">
+      <h4 ><a href="" style="text-decoration: none;color: #aa0b3c;"> Research</a></h4>
+      <p style="font-size:16.9px;"><a href="" style="color: black;">Our researchers</a>,
+        <a href="" style="color: black;">research events</a>,
+        <a href="" style="color: black;"> research themes and topics </a>,
+        <a href="" style="color: black;">funding and fellowships</a>,
+        <a href="" style="color: black;">datasets</a>,
+        <a href="" style="color: black;"> research papers</a>,
+        <a href="" style="color: black;"> the future of finance </a> and
+        <a href="" style="color: black;">our Bank Underground blog.</a>
+        
+      </p>
+    </div>
+    <div class="col-md-3">
+      <h4 ><a href="" style="text-decoration: none;color: #aa0b3c;"> Statistics</a></h4>
+      <p style="font-size:16.9px;" style="color: black;">
+        <a href="" style="color: black;"> Statistical releases</a>,
+        <a href="" style="color: black;">  how we collect data</a>,
+        <a href="" style="color: black;">  banknote statistics</a>and
+        <a href="" style="color: black;"> our interactive database.</a>
+        
+      </p>
+    </div>
+    <div class="col-md-2"></div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-1"></div>
+      <div class="col-md-3"><a href="" >
+       <img src="https://www.bankofengland.co.uk/-/media/boe/images/in-focus/placeholder.png?h=316&la=en&mh=316&mw=481&w=479&hash=7DC54BEC2D320EF31059464E21AB35B1B99E6EFF" style="width:100%;height:100%">
+      
+       <div class="bottom">Covid Corporate Financing Facility (CCFF): information for those seeking to participate in the scheme</div>
+      </a>
+      </div>
+      <div class="col-md-3">
+        <a href="">
+        <img src="https://www.bankofengland.co.uk/-/media/boe/images/in-focus/exchanging-banknotes.jpg?h=316&la=en&mh=316&mw=481&w=479&hash=3F4F98F1FE6F59B562C1F594BB34498F9929D522" style="width:100%;height:100%">
+        <div class="bottom">How to exchange old Bank of England banknotes</div>
+</a>
+      </div>
+      <div class="col-md-3">
+        <a href="">
+        <img src="https://www.bankofengland.co.uk/-/media/boe/images/banknotes/20/polymer/20-in-focus.png?h=316&la=en&mh=316&mw=481&w=479&hash=211F2ABA09FBE756E270D4080C7DEAB378D1070F" style="width:100%;height:100%">
+        <div class="bottom">The new £20 note</div>
+        </a>
+
+      </div>
+      <div class="col-md-2"></div>
+      </div>
+
+
+
+      <div class="row mt-5">
+        <div class="col-md-1"></div>
+        <div class="col-md-9">
+          <div class="row" style="font-size: 19.8px;">
+        <div class="col-md-3"><a href="" >
+          <img src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720" style="width:100%;height:auto;object-fit: cover;background-color: indigo;">
+        <p class="top" style="background-color: #00294e;">// Prudential Regulation // Statement</p>
+        <div style="background-color:#00294e;color: white;padding-left: 25px; padding-right:30px;padding-top: 10px;padding-bottom: 10px;">07 April 2020 <br>PRA statement on decision by insurance companies ..</div>
+
+        </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+          <img src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720" style="object-fit:cover;width:100%;height:auto;background-color: #005e6e;">
+          <p class="top" style="background-color: #005e6e;">//Publication// Balance sheet</p>
+          <div style="background-color:#005e6e;color: white;padding-left: 25px; padding-right:40px;padding-top: 10px;padding-bottom: 10px;">07 April 2020 <br>Consolidated balance sheet - 31 December..</div>
+  </a>
+        </div>
+        <div class="col-md-3">
+          <a href="" >
+          <img src="https://www.bankofengland.co.uk/-/media/boe/images/icons/events.png?mw=270&hash=D69C6D1667C498FFC798F53802A7743BCFCC6A57" style="object-fit:cover;width:100%;height:auto;background-color: indigo;">
+          <p class="top" style="background-color: #00294e;">// Event // Webinar</p>
+          <div style="background-color:#00294e;color: white;padding-left: 25px; padding-right:40px;padding-top: 10px;padding-bottom: 10px;">07 April 2020 <br>Central Bank Digital Currency Discussion...</div>
+          </a>
   
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <img src="https://www.bankofengland.co.uk/-/media/boe/images/icons/news.png?mw=270&hash=2E35DCDF2193C217CF5CBFD0717916E40FF0FCB2" style="object-fit:cover;width:100%;height:auto;background-color: #005e6e;">
+           <p class="top" style="background-color: #005e6e;">//News// release</p>
+           <div style="background-color:#005e6e;color: white;padding-left: 25px; padding-right:30px;padding-top: 10px;padding-bottom: 10px;">06 April 2020 <br>The Bank Of England's Term Funding Scheme... </div>
+            </a>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-2"></div>
+        
+        
+</div>
+
+
+<div class=" row mt-3">
+<div class="col-md-7">
+</div>
+<div class="col-md-3 "> <a href="" style="float: right;font-size:18px;color: #aa0b3c;text-decoration: underline; ">view more</a></div>
+
+<div class="col-md-2"></div>
+</div>
+<div class=" row ">
+  <div class="col-md-7">
+  </div>
+
+
+<div class="col-md-3 mt-5 pb-5"><a href="" style="float: right;font-size:18px;color: #aa0b3c; "> Back To Top</a></div>
+<div class="col-md-2"></div>
+</div>
+
+
+
+
+
+
+
+</div>
+  
+<footer>
+  <div style="background:#00294e;">
+  <div class="container">
+
+    <div class="row mt-3 pb-3">
+      <div class="col-md-1"></div>
+      <div class="col-md-9">
+<div class="row" style="color:white;">
+      <div class="col-md-3 pt-2">
+        <a href=""><img src="https://www.bankofengland.co.uk/-/media/boe/images/logo/footer-logo.svg?h=48&la=en&mh=50&mw=240&w=215&hash=E52454E60787ED7B9465303E800F2ED61C9EB987" style="width:215px;height: 48px;"></a>
+<h5 class="mt-4">Follow us</h5>
+<ul class="list-inline">
+  <li><a href=""><img  src="../assets/img/facebook.png"></a></li>
+  <li><a href=""><img  src="../assets/img/twitter.png"></a></li>
+   </ul>
+      </div>
+      <div class="col-md-3 mt-2">
+        <h5>Browse topics</h5>
+        <ul class="pt-2 pl-0" style="list-style:none; ">
+          <li >banknotes</li>
+          <li >careers</li>
+          <li >Education</li>
+          <li >Financial stability</li>
+          <li >Gold</li>
+          <li >Markets</li>
+          <li >Monetary policy</li>
+          <li >Payment and settlement</li>
+          <li >Prudential regulation</li>
+          <li >Research</li>
+          <li >Statistics</li>
+         
+
+          
+        </ul>
+      </div>
+
+      
+      <div class="col-md-3 mt-2">
+        <h5>Useful links</h5>
+        <ul class="pt-2 pl-0" style="list-style:none; ">
+          <li >Contact us</li>
+          <li >Subscribe to emails</li>
+          <li >FAQs</li>
+          <li >Freedom of information</li>
+          <li >CCBS</li>
+          <li >KnowledgeBank</li>
+          <li >The Archive</li>
+          <li >visit the mueseum</li>
+         
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <p>Switchboard: +44(0)20 3461 4444
+        <br>Enquiries: +44(0)20 3461 4878</p>
+        <h5 class="pt-3">Visiting the museum</h5>
+        <p class="pt-1">Bartholomew Lane, London, EC2R 8AH</p>
+      </div>
+</div>
+      </div>
+      <div class="col-md-2"></div>
+
+
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-2 pt-5">
+        <p style="color:white">©2020 Bank of England</p>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5 pt-5">
+        <ul class="list-inline">
+          <li><a href="" style="color:white">Accessibility</a></li>
+          <li><a href="" style="color:white">Cookies</a></li>
+          <li><a href="" style="color:white">Cymraeg</a></li>
+          <li><a href="" style="color:white">Legal</a></li>
+          <li><a href="" style="color:white">Privacy</a></li>
+          <li><a href="" style="color:white">SiteMap</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+
+
+  </div>
+  
+  
+  </div>
+</footer>
 
 
 </body>
