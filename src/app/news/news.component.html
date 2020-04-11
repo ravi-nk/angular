@@ -1,0 +1,844 @@
+<header>
+    <div class="topnav" id="myTopnav" style="background:#f6f6f6;">
+        <a routerLink="/home" data-toggle="pill"><img
+                src="https://www.bankofengland.co.uk/-/media/boe/images/logo/logo-boe.svg?h=48&la=en&mh=61&w=215&hash=AC948B7462B3B0F4C12592CE7C11D3ABD746AB6D"
+                style="width:215px;height: 48px;"></a>
+        <span style="float: right;">
+
+            <a data-toggle="pill" href="" style="background-color: #aa0b3c;color:white">Browse</a>
+            <a data-toggle="pill" routerLink="/About">About</a>
+            <a data-toggle="pill" href="/News">News and Publication</a>
+            <a data-toggle="pill" href="#">Mueseum</a>
+            <a data-toggle="pill" href="#">Contact</a>
+            <a data-toggle="pill" href="">
+                <form action="" method="get">
+
+                    <div style="display:flex;font-size: 10px;">
+                        <input type="search" name="SearchTerm" class="form-control"
+                            placeholder="Search the Bank of England" autocomplete="off"
+                            style="width:212px;height: 38px;border:none;">
+
+                        <button class="btn btn-danger" type="submit" style="height:38px;width:42px;"><i
+                                class="fa fa-search" style="font-size: 21px;"></i></button>
+                    </div>
+
+
+                </form>
+            </a>
+
+            <a href="#" class="icon" (click)="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </span>
+
+    </div>
+</header>
+
+<main>
+    <section>
+        <div class="container">
+            <div class="row mt-5 pt-5 ">
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
+                    <div class="mt-4">
+                        <a routerLink="/home" style="text-decoration: underline; color: black;">Home</a>/
+                        News and Publication
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+
+
+
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
+                    <h1 style="font-size: 59.4px;color:#005e6e;">
+                        News, publications and events
+                    </h1>
+                    <div style="font-size: 21.96px;"><img src="../../assets/img/info-w.png" class="pr-2"
+                            style="height: 30px;"> <span>Latest and upcoming releases from the Bank of England</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3 pl-5 ml-5">
+                    <div style="border-left: 4px solid #aa0b3c;">
+                        <div style="padding-left:20px;">
+                            <h4 style="color:#005e6e; padding-bottom: 8px;">Related Links</h4>
+                            <div>
+                                <a href="" style="color:#aa0b3c;font-size: 17px;"><img src="../../assets/img/next.png"
+                                        class="pr-2">RSS Feeds</a></div>
+                            <div><a href="" style="color:#aa0b3c;font-size: 17px;"><img src="../../assets/img/next.png"
+                                        class="pr-2">Subscribe to emails</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row mt-5 pt-5 pb-3">
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <form action="" method="get">
+                        <div style="display:flex;font-size: 10px;">
+                            <input type="search" name="SearchTerm" class="form-control"
+                                placeholder="search this area..." autocomplete="off"
+                                style="width:185px;height:38px;border:1px solid #00294e;">
+                            <button class="btn btn-danger" type="submit" style="height:38px;width:46px;"><i
+                                    class="fa fa-search" style="font-size: 21px;"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-5"></div>
+                <div class="col-md-3">
+                    <ul class="list-inline">
+                        <li><a href="" class="btn btn-danger"> Latest</a> </li>
+                        <li><a href="" class="btn btn-outline-danger"> Upcoming</a> </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-1"></div>
+
+
+
+            </div>
+            <div class="row pb-3">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 mr-4">
+                    <div>
+                    <h4 style="color: #00294e;" > Filter by type</h4>
+
+
+                    <div class="custom-control custom-checkbox pt-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Bank Overground</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox pt-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">Event</label>
+                      </div>
+
+
+                      <div class="custom-control custom-checkbox pt-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3">KnowledgeBank</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox pt-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4">News</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox pt-2">
+                        <input type="checkbox" class="custom-control-input " id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5">Prudential Regulation</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox pt-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                        <label class="custom-control-label" for="customCheck6">Publication</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox pt-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                        <label class="custom-control-label" for="customCheck7">Speech</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox pt-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">Statistics</label>
+                      </div>
+
+
+<div class="pt-4"><a href="" style="color:#aa0b3c;text-decoration: underline;">Clear all</a></div>
+
+</div>
+
+<div class="mt-5">
+    <h4 style="color: #00294e;" > Filter by topic</h4>
+
+
+    <div class="custom-control custom-checkbox pt-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="custom-control-label" for="customCheck1">Quarterly Bulletin</label>
+      </div>
+
+      <div class="custom-control custom-checkbox pt-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck2">
+        <label class="custom-control-label" for="customCheck2">News release</label>
+      </div>
+
+
+      <div class="custom-control custom-checkbox pt-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck3">
+        <label class="custom-control-label" for="customCheck3">Monetary Policy Committee (MPC)</label>
+      </div>
+
+      <div class="custom-control custom-checkbox pt-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck4">
+        <label class="custom-control-label" for="customCheck4">Research</label>
+      </div>
+
+      <div class="custom-control custom-checkbox pt-2">
+        <input type="checkbox" class="custom-control-input " id="customCheck5">
+        <label class="custom-control-label" for="customCheck5">Working Paper</label>
+      </div>
+
+      <div class="custom-control custom-checkbox pt-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck6">
+        <label class="custom-control-label" for="customCheck6">Monetary policy</label>
+      </div>
+
+      <div class="custom-control custom-checkbox pt-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck7">
+        <label class="custom-control-label" for="customCheck7">Monetary policy</label>
+      </div>
+
+      <div class="custom-control custom-checkbox pt-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck8">
+        <label class="custom-control-label" for="customCheck8">Weekly report</label>
+      </div>
+
+      <div class="custom-control custom-checkbox pt-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck7">
+        <label class="custom-control-label" for="customCheck7">Prudential regulation</label>
+      </div>
+
+      <div class="custom-control custom-checkbox pt-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck8">
+        <label class="custom-control-label" for="customCheck8">Banking policy</label>
+      </div>
+
+
+<div class="pt-4"><a href="" style="color:#aa0b3c;text-decoration: underline;">Clear all</a></div>
+
+</div>
+
+<div class="mt-4">
+    <h4 style="color: #00294e;" > Date</h4>
+    <form action="">
+From:<input type="text" class="form-control mb-2" placeholder="dd/mm/yyyy" style="height: 42px;border: 1px solid black;">
+To:<input type="text" class="form-control " placeholder="dd/mm/yyyy" style="height: 42px;border: 1px solid black;">
+
+    </form>
+    <div class="pt-3"><a href="" style="color:#aa0b3c;text-decoration: underline;">Clear all</a></div>
+</div>
+
+
+
+                </div>
+                <div class="col-md-7">
+                    <div>
+                        <a href="">
+                            <div class="row" style="background-color: #00294e;color:white;">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <span style="float: right;">//Prudential Regulation//Statement</span>
+                                    <div style="padding-top:25px; padding-bottom: 35px;">
+                                        <div style="font-size: 18px;"> 09 April 2020</div>
+                                        <h5>PRA decision on Systemic Risk Buffer rates <img
+                                                src="../../assets/img/send.png" style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a></div>
+
+
+                    <div class="mt-3">
+
+                        <a href="">
+                            <div class="row" style="background-color: #005e6e;color:white; ">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/news.png?mw=270&hash=2E35DCDF2193C217CF5CBFD0717916E40FF0FCB2">
+                                    </div>
+                                </div>
+                                <div class="col-md-10 ">
+                                    <span style="float: right;">//News//Statement</span>
+                                    <div style="padding-top:25px; padding-bottom: 35px;">
+                                        <div style="font-size: 18px;"> 09 April 2020</div>
+                                        <h5>Financial Policy Committee statement <img src="../../assets/img/send.png"
+                                                style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+
+                    <div class="mt-3">
+
+                        <a href="">
+                            <div class="row" style="background-color: #005e6e;color:white; ">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720">
+                                    </div>
+                                </div>
+                                <div class="col-md-10 ">
+                                    <span style="float: right;">// Publication // Weekly report</span>
+                                    <div style="padding-top:25px; padding-bottom: 35px;">
+                                        <div style="font-size: 18px;"> 09 April 2020</div>
+                                        <h5>Bank of England Weekly Report 8 April 2020 <img
+                                                src="../../assets/img/send.png" style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="mt-3">
+                        <a href="">
+                            <div class="row" style="background-color: #00294e;color:white;">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <span style="float: right;">//Prudential Regulation//Buisness Plan</span>
+                                    <div style="padding-top:25px; padding-bottom: 35px;">
+                                        <div style="font-size: 18px;"> 09 April 2020</div>
+                                        <h5>Prudential Regulation Authority Business Plan 2020/21 <img
+                                                src="../../assets/img/send.png" style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+                    <div class="mt-3">
+                        <a href="">
+                            <div class="row" style="background-color: #00294e;color:white;">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <span style="float: right;">//Prudential Regulation//Consultation paper</span>
+                                    <div style="padding-top:25px; padding-bottom: 35px;">
+                                        <div style="font-size: 18px;"> 09 April 2020</div>
+                                        <h5>Regulated fees and levies: Rates proposals 2020/21<img
+                                                src="../../assets/img/send.png" style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="mt-3">
+
+                        <a href="">
+                            <div class="row" style="background-color: #005e6e;color:white; ">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/news.png?mw=270&hash=2E35DCDF2193C217CF5CBFD0717916E40FF0FCB2">
+                                    </div>
+                                </div>
+                                <div class="col-md-10 ">
+                                    <span style="float: right;">//News//News release</span>
+                                    <div style="padding-top:20px; padding-bottom: 20px;">
+                                        <div style="font-size: 18px;"> 09 April 2020</div>
+                                        <h5>HM Treasury and Bank of England announce temporary extension to Ways and
+                                            Means facility <img src="../../assets/img/send.png" style="float: right;">
+                                        </h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="mt-3">
+                        <a href="">
+                            <div class="row" style="background-color: #00294e;color:white;">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <span style="float: right;">//Prudential Regulation//Letter</span>
+                                    <div style="padding-top:20px; padding-bottom: 20px;">
+                                        <div style="font-size: 18px;"> 09 April 2020</div>
+                                        <h5>Letter from Credit Union Supervision Team to Directors, Staff members and
+                                            Volunteers of PRA Regulated...<img src="../../assets/img/send.png"
+                                                style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+
+
+                    <div class="mt-3">
+                        <a href="">
+                            <div class="row" style="background-color: #00294e;color:white;">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <span style="float: right;">//Prudential Regulation//Statement</span>
+                                    <div style="padding-top:20px; padding-bottom: 20px;">
+                                        <div style="font-size: 18px;"> 08 April 2020</div>
+                                        <h5>PRA statement on decision by insurance companies to pause dividends<img
+                                                src="../../assets/img/send.png" style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+                    <div class="mt-3">
+
+                        <a href="">
+                            <div class="row" style="background-color: #005e6e;color:white; ">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720">
+                                    </div>
+                                </div>
+                                <div class="col-md-10 ">
+                                    <span style="float: right;">// Publication // Balance sheet</span>
+                                    <div style="padding-top:25px; padding-bottom: 35px;">
+                                        <div style="font-size: 18px;"> 07 April 2020</div>
+                                        <h5>Consolidated balance sheet - 31 December 2018 <img
+                                                src="../../assets/img/send.png" style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="mt-3">
+                        <a href="">
+                            <div class="row" style="background-color: #00294e;color:white;">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/events.png?mw=270&hash=D69C6D1667C498FFC798F53802A7743BCFCC6A57">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <span style="float: right;">//Event//Webinar</span>
+                                    <div style="padding-top:25px; padding-bottom: 35px;">
+                                        <div style="font-size: 18px;"> 07 April 2020</div>
+                                        <h5>Central Bank Digital Currency Discussion Paper Webinar <img
+                                                src="../../assets/img/send.png" style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a></div>
+
+
+                    <div class="mt-3">
+
+                        <a href="">
+                            <div class="row" style="background-color: #005e6e;color:white; ">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/news.png?mw=270&hash=2E35DCDF2193C217CF5CBFD0717916E40FF0FCB2">
+                                    </div>
+                                </div>
+                                <div class="col-md-10 ">
+                                    <span style="float: right;">//News//News release</span>
+                                    <div style="padding-top:20px; padding-bottom: 20px;">
+                                        <div style="font-size: 18px;"> 06 April 2020</div>
+                                        <h5>The Bank of England’s Term Funding Scheme with additional incentives for
+                                            SMEs lwill open to drawing on... <img src="../../assets/img/send.png"
+                                                style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+                    <div class="mt-3">
+                        <a href="">
+                            <div class="row" style="background-color: #00294e;color:white;">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <span style="float: right;">//Prudential Regulation//Statement</span>
+                                    <div style="padding-top:20px; padding-bottom: 20px;">
+                                        <div style="font-size: 18px;"> 02 April 2020</div>
+                                        <h5>Joint PRA and FCA Statement on ‘Senior Managers and Certification Regime and
+                                            Coronavirus: Our expection...<img src="../../assets/img/send.png"
+                                                style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="mt-3">
+
+                        <a href="">
+                            <div class="row" style="background-color: #005e6e;color:white; ">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/stats.png?mw=270&hash=A34C823600962CBEB4698EE01B6EAFB7F14BA35F">
+                                    </div>
+                                </div>
+                                <div class="col-md-10 ">
+                                    <span style="float: right;">// Statistics // UK international reserves</span>
+                                    <div style="padding-top:25px; padding-bottom: 35px;">
+                                        <div style="font-size: 18px;"> 02 April 2020</div>
+                                        <h5>UK International Reserves - March 2020 <img src="../../assets/img/send.png"
+                                                style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+                    <div class="mt-3">
+
+                        <a href="">
+                            <div class="row" style="background-color: #005e6e;color:white; ">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/news.png?mw=270&hash=2E35DCDF2193C217CF5CBFD0717916E40FF0FCB2">
+                                    </div>
+                                </div>
+                                <div class="col-md-10 ">
+                                    <span style="float: right;">//News//News release</span>
+                                    <div style="padding-top:20px; padding-bottom: 20px;">
+                                        <div style="font-size: 18px;"> 02 April 2020</div>
+                                        <h5>Asset Purchase Facility (APF): Additional Corporate Bond Purchases-Market
+                                            Notice 2 April 2020 <img src="../../assets/img/send.png"
+                                                style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="mt-3">
+
+                        <a href="">
+                            <div class="row" style="background-color: #005e6e;color:white; ">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720">
+                                    </div>
+                                </div>
+                                <div class="col-md-10 ">
+                                    <span style="float: right;">// Publication // Weekly report</span>
+                                    <div style="padding-top:25px; padding-bottom: 35px;">
+                                        <div style="font-size: 18px;"> 02 April 2020</div>
+                                        <h5>Bank of England Weekly Report 1 April 2020<img
+                                                src="../../assets/img/send.png" style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+                    <div class="mt-3">
+                        <a href="">
+                            <div class="row" style="background-color: #00294e;color:white;">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <span style="float: right;">//Prudential Regulation//Policy statement</span>
+                                    <div style="padding-top:20px; padding-bottom: 20px;">
+                                        <div style="font-size: 18px;"> 02 April 2020</div>
+                                        <h5>Solvency II: Income producing real estate loans and internal credit
+                                            assesments for illiquid and unrated...<img src="../../assets/img/send.png"
+                                                style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="mt-3">
+                        <a href="">
+                            <div class="row" style="background-color: #00294e;color:white;">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                            src="https://www.bankofengland.co.uk/-/media/boe/images/icons/docs.png?mw=270&hash=F22C05FC91EC0416E299ACB9F5657F3028EB7720">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <span style="float: right;">//Prudential Regulation//Supervisory statement</span>
+                                    <div style="padding-top:25px; padding-bottom: 35px;">
+                                        <div style="font-size: 18px;"> 02 April 2020</div>
+                                        <h5>Solvency II: illiquid and unrated assets
+                                           <img src="../../assets/img/send.png"
+                                                style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="mt-3">
+
+                        <a href="">
+                            <div class="row" style="background-color: #005e6e;color:white; ">
+                                <div class="col-md-2">
+                                    <div class="img">
+                                        <img
+                                        src="https://www.bankofengland.co.uk/-/media/boe/images/icons/news.png?mw=270&hash=2E35DCDF2193C217CF5CBFD0717916E40FF0FCB2">
+                                    </div>
+                                </div>
+                                <div class="col-md-10 ">
+                                    <span style="float: right;">// News // Statistical notice</span>
+                                    <div style="padding-top:25px; padding-bottom: 35px;">
+                                        <div style="font-size: 18px;"> 02 April 2020</div>
+                                        <h5>Statistical Notice 2020/02<img
+                                                src="../../assets/img/send.png" style="float: right;"></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+<div class="mt-3">
+                    <a href=""  style="float: left;" ><img src="../../assets/img/back.png" alt="" ></a> </div>
+
+                    <div class="mt-3">
+                        <a href=""  style="float: right;" ><img src="../../assets/img/right-32.png" alt="" ></a> </div>
+
+
+                        <div class="text-center"> Page 1 of 320</div>
+
+                        <div class=" mt-5 pt-5 pb-5"><a href="" style="float: right;font-size:18px;color: #aa0b3c; "> <img  style="max-width:25px;" src="../assets/img/up-arrow.png">Back To Top</a></div>
+
+
+                </div>
+
+
+               
+                <div class="col-md-1"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div style="border-top:1px solid #6b7e87"></div>
+                    <div class="row mt-4 mb-5">
+                    <div class="col-md-5">
+                     
+                      <div style="font-size: 17px"> page was last updated 03 March 2020</div></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-4">
+                      <h5>Was this page useful?
+                        <img src="../../assets/img/smile.png" class="pr-2 pl-2">
+                        <img src="../../assets/img/sad.png">
+                      </h5>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-1"></div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div style="background:#00294e;">
+    <div class="container">
+  
+      <div class="row mt-3 pb-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-9">
+  <div class="row" style="color:white;">
+        <div class="col-md-3 pt-2">
+       
+          <a href=""><img src="https://www.bankofengland.co.uk/-/media/boe/images/logo/footer-logo.svg?h=48&la=en&mh=50&mw=240&w=215&hash=E52454E60787ED7B9465303E800F2ED61C9EB987" style="width:215px;height: 48px;"></a>
+  <div class="mt-4">
+          <h5 class="mt-4">Follow us</h5>
+  
+    <a href=""><img  style="max-width:41px;" src="../assets/img/fb.png"></a>
+    <a href=""><img   style="max-width:42px;" src="../assets/img/twitter.png"></a>
+    <a href=""><img  style="max-width:38px;" src="../assets/img/li.png"></a>
+    <a href=""><img  style="max-width:40px;" src="../assets/img/yt.png"></a>
+    <a href=""><img  style="max-width:45px;" src="../assets/img/tt.png"></a>
+     </div>
+     <div class="mt-3">
+      <h5 class="mt-4">Museum</h5>
+  
+  <a href=""><img  style="max-width:41px;" src="../assets/img/fb.png"></a>
+  <a href=""><img   style="max-width:42px;" src="../assets/img/twitter.png"></a>
+  <a href=""><img  style="max-width:38px;" src="../assets/img/ig.png"></a>
+  
+  </div>
+        </div>
+        <div class="col-md-3 mt-2">
+          <h5>Browse topics</h5>
+          <ul class="pt-2 pl-0" style="list-style:none; ">
+            <li >banknotes</li>
+            <li >careers</li>
+            <li >Education</li>
+            <li >Financial stability</li>
+            <li >Gold</li>
+            <li >Markets</li>
+            <li >Monetary policy</li>
+            <li >Payment and settlement</li>
+            <li >Prudential regulation</li>
+            <li >Research</li>
+            <li >Statistics</li>
+           
+  
+            
+          </ul>
+        </div>
+  
+        
+        <div class="col-md-3 mt-2">
+          <h5>Useful links</h5>
+          <ul class="pt-2 pl-0" style="list-style:none; ">
+            <li >Contact us</li>
+            <li >Subscribe to emails</li>
+            <li >FAQs</li>
+            <li >Freedom of information</li>
+            <li >CCBS</li>
+            <li >KnowledgeBank</li>
+            <li >The Archive</li>
+            <li >visit the mueseum</li>
+           
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p>Switchboard: +44(0)20 3461 4444
+          <br>Enquiries: +44(0)20 3461 4878</p>
+          <h5 class="pt-3">Visiting the museum</h5>
+          <p class="pt-1">Bartholomew Lane, London, EC2R 8AH</p>
+        </div>
+  </div>
+        </div>
+        <div class="col-md-2"></div>
+  
+  
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-2 pt-5">
+          <p style="color:white">©2020 Bank of England</p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5 pt-5">
+          <ul class="list-inline">
+            <li><a href="" style="color:white">Accessibility</a></li>
+            <li><a href="" style="color:white">Cookies</a></li>
+            <li><a href="" style="color:white">Cymraeg</a></li>
+            <li><a href="" style="color:white">Legal</a></li>
+            <li><a href="" style="color:white">Privacy</a></li>
+            <li><a href="" style="color:white">SiteMap</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+  
+  
+  
+    </div>
+    
+    
+    </div>
+  </footer>
