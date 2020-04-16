@@ -3,13 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule,routingComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PlanYourVisitComponent } from './plan-your-visit/plan-your-visit.component';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-   routingComponent
+   routingComponent,
+   PlanYourVisitComponent
+   
    
    
   ],
